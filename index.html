@@ -58,10 +58,13 @@
     <main>
       <!-- Герой-->
       <section class="hero section-hero">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button data-modal-open class="button center" type="button">
-          Замовити послугу
-        </button>
+        <div class="center">
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <button data-modal-open class="button center" type="button">
+            Замовити послугу
+          </button>
+        </div>
+
         <!-- Модальне вікно -->
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
@@ -70,6 +73,82 @@
                 <use href="./images/svg/symbol-defs.svg#icon-close" />
               </svg>
             </button>
+            <h2 class="title-modal">Залиште свої дані, ми вам передзвонимо</h2>
+            <form class="form">
+              <div class="form__group">
+                <label class="form-label"
+                  >Ім'я
+                  <input
+                    class="form-input"
+                    type="text"
+                    placeholder=" "
+                    name=" user-nane"
+                    required
+                  />
+                  <svg class="modal-icon" width="20" height="20">
+                    <use
+                      href="./images/svg/symbol-defs.svg#icon-person-black-18dp-1"
+                    />
+                  </svg>
+                </label>
+              </div>
+
+              <div class="form__group">
+                <label class="form-label"
+                  >Телефон
+                  <input
+                    class="form-input"
+                    type="tel"
+                    placeholder=" "
+                    name=" namber "
+                    required
+                  />
+                  <svg class="modal-icon" width="20" height="20">
+                    <use
+                      href="./images/svg/symbol-defs.svg#icon-phone-black-18dp-1"
+                    />
+                  </svg>
+                </label>
+              </div>
+
+              <div class="form__group">
+                <label class="form-label"
+                  >Пошта
+                  <input
+                    class="form-input"
+                    type="email"
+                    placeholder=" "
+                    name=" tel-nane"
+                    required
+                  />
+                  <svg class="modal-icon" width="20" height="20">
+                    <use
+                      href="./images/svg/symbol-defs.svg#icon-email-black-18dp-1"
+                    />
+                  </svg>
+                </label>
+              </div>
+
+              <div class="form__group">
+                <label class="form-label label-message"
+                  >Коментар
+                  <textarea
+                    class="form-input"
+                    name="form-text"
+                    placeholder="Введіть текст"
+                    required
+                  ></textarea>
+                </label>
+              </div>
+
+              <div class="form__group">
+                <label class="form-label"
+                  >Погоджуюся з розсилкою та приймаю Умови договору
+                  <input class="form-input" type="checkbox" />
+                </label>
+              </div>
+              <button type="submit">Відправити</button>
+            </form>
           </div>
         </div>
       </section>
