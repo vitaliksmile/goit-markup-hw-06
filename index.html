@@ -142,12 +142,30 @@
               </div>
 
               <div class="form__group">
-                <label class="form-label"
-                  >Погоджуюся з розсилкою та приймаю Умови договору
-                  <input class="form-input" type="checkbox" />
+                <input id="conditions" class="checkbox" type="checkbox" />
+                <label for="conditions" class="form-label checkbox-text">
+                  <span class="text-contract-basic"
+                    >Погоджуюся з розсилкою та приймаю<span>
+                      <a class="text-contract" href=""> Умови договору</a></span
+                    >
+                  </span>
+                  <svg class="checkbox-icon" width="16" height="15">
+                    <use href="./images/svg/symbol-defs.svg#icon-Vector" />
+                  </svg>
                 </label>
+
+                <!-- <label class="form-label"
+                  >Погоджуюся з розсилкою та приймаю
+                  <span> <a href=""> Умови договору</a> </span>
+                  <input class="form-input" type="checkbox" />
+                  <svg class="modal-icon" width="20" height="20">
+                    <use
+                      href="./images/svg/symbol-defs.svg#icon-email-black-18dp-1"
+                    />
+                  </svg>
+                </label> -->
               </div>
-              <button type="submit">Відправити</button>
+              <button class="button-modal" type="submit">Відправити</button>
             </form>
           </div>
         </div>
@@ -574,6 +592,16 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footter-email">
+          <h2 class="title-email">Підпишіться на розсилку</h2>
+          <input class="footer-inpur" type="email" placeholder="E-mail" />
+          <button class="footter-email-btn">
+            Підписатися
+            <svg class="telegram-svg" width="24" height="24">
+              <use href="./images/svg/symbol-defs.svg#icon-icon-send" />
+            </svg>
+          </button>
         </div>
       </div>
     </footer>
