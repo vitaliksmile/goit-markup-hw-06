@@ -694,6 +694,7 @@ li {
   border-radius: 4px;
   margin-right: 12px;
   padding: 15px 16px;
+  color: var(--primary--white-color);
 }
 .footer-inpur::placeholder {
   font-weight: 400;
