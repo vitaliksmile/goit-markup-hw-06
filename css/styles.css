@@ -386,11 +386,16 @@ li {
 }
 .form-checkbox:checked ~ .check-name > .check-svg {
   background-color: #2196f3;
-
   border: transparent;
 }
-
+.form-check {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .check-link {
+  margin-left: 5px;
   color: #2196f3;
 }
 
