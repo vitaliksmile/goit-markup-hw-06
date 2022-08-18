@@ -254,6 +254,8 @@ li {
 
 .close {
   stroke: rgba(0, 0, 0, 0.1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-close:hover .close {
   fill: var(--accent-color);
@@ -285,10 +287,13 @@ li {
   letter-spacing: 0.01em;
   color: #757575;
 }
+
 .modal-icon {
   position: absolute;
   top: 50%;
   left: 12px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input {
@@ -301,6 +306,9 @@ li {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
+  transition-property: outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:focus {
   outline: 1px solid var(--accent-color);
@@ -352,6 +360,46 @@ li {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: transparent;
+}
+.display {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.check-name {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+.form-checkbox:checked ~ .check-name > .check-svg {
+  background-color: #2196f3;
+
+  border: transparent;
+}
+
+.check-link {
+  color: #2196f3;
+}
+
+.check-svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border: 2px solid black;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Button */
@@ -662,6 +710,8 @@ li {
   border-radius: 4px;
 }
 .telegram-svg {
+  vertical-align: middle;
+  margin-left: 10px;
 }
 
 /* .customer-link:hover .svg,

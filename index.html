@@ -141,31 +141,22 @@
                 </label>
               </div>
 
-              <div class="form__group">
-                <input id="conditions" class="checkbox" type="checkbox" />
-                <label for="conditions" class="form-label checkbox-text">
-                  <span class="text-contract-basic"
-                    >Погоджуюся з розсилкою та приймаю<span>
-                      <a class="text-contract" href=""> Умови договору</a></span
-                    >
-                  </span>
-                  <svg class="checkbox-icon" width="16" height="15">
+              <div class="form-check">
+                <input
+                  class="display form-checkbox"
+                  type="checkbox"
+                  name=""
+                  id="licence"
+                />
+                <label class="check-name" for="licence" required="">
+                  <svg class="check-svg" width="11" height="8">
                     <use href="./images/svg/symbol-defs.svg#icon-Vector" />
                   </svg>
+                  Погоджуюся з розсилкою та приймаю
+                  <a class="check-link" href="#"> Умови договору</a>
                 </label>
-
-                <!-- <label class="form-label"
-                  >Погоджуюся з розсилкою та приймаю
-                  <span> <a href=""> Умови договору</a> </span>
-                  <input class="form-input" type="checkbox" />
-                  <svg class="modal-icon" width="20" height="20">
-                    <use
-                      href="./images/svg/symbol-defs.svg#icon-email-black-18dp-1"
-                    />
-                  </svg>
-                </label> -->
+                <button class="button-modal" type="submit">Відправити</button>
               </div>
-              <button class="button-modal" type="submit">Відправити</button>
             </form>
           </div>
         </div>
@@ -595,13 +586,20 @@
         </div>
         <div class="footter-email">
           <h2 class="title-email">Підпишіться на розсилку</h2>
-          <input class="footer-inpur" type="email" placeholder="E-mail" />
-          <button class="footter-email-btn">
-            Підписатися
-            <svg class="telegram-svg" width="24" height="24">
-              <use href="./images/svg/symbol-defs.svg#icon-icon-send" />
-            </svg>
-          </button>
+          <form>
+            <input
+              class="footer-inpur"
+              type="email"
+              placeholder="E-mail"
+              required
+            />
+            <button class="footter-email-btn" type="submit">
+              Підписатися
+              <svg class="telegram-svg" width="24" height="24">
+                <use href="./images/svg/symbol-defs.svg#icon-icon-send" />
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
